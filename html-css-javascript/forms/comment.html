@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms and methods</title>
+        <link rel="stylesheet" href="assets/css/main1.css">
+    </head>
+    <body>
+         <!-- target blank is for send them in a different tab -->
+        <form method="get" 
+            action="http://comp1234.gblearn.com/winter2023/lecture/wk11/WhereToSendThisInformation.php"
+            target="_blank"
+        >
+            <fieldset>
+                <legend>Form Page</legend>
+                <div class="box">
+                    <label for="name">Full name:</label>
+                    <input type="text" name="fname" id="name">
+                </div>
+                <div class="box">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@server.org">
+                </div>
+
+                <div class="box">
+                    <label for="colorbox">Website Color:</label>
+                    <input type="color" id="colorbox" name="colorbox">
+                    <input type="button" id="colorbutton" value="colorbutton" onclick ="changecolor()">
+                    <!-- Readonly is to not let anybody to write there -->
+                    <input type="text" name="colortext" id="cbox" readonly>
+                </div> 
+                <div class="box">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" min="2023-01-01">
+                    <input type="datetime-local" id="datetime" name="datetime" min="2023-01-01T08:00">
+
+                </div>
+                <div class="box">
+                    <label for="range">Date:</label>
+                    <input type="range" id="range" name="range" min="0" max="10" step="1">
+                </div>
+                <div id="field">
+                    <fieldset id="payment">
+                        <legend>Payment type</legend>
+                        <div class="box">
+                            <label for="cash">Cash:</label>
+                            <!-- the checked is for default check the radiobutton -->
+                            <input type="radio" id="cash" name="pay" value="cash" checked>
+                            <label for="credit">Credit:</label>
+                            <input type="radio" id="credit" name="pay" value="credit">
+                        </div>
+                    </fieldset>
+                        <fieldset id="choose">
+                            <legend>Favorite items</legend>
+                            <div class="box">
+                                <label for="toy">toy-spintop</label>
+                                <input type="checkbox" id="toy" name="ch1" value="toy top">
+                                <label for="ball">Credit:</label>
+                                <input type="checkbox" id="ball" name="ch2" value="ball">
+                                <label for="toycar">Credit:</label>
+                                <input type="checkbox" id="toycar" name="ch3" value="toy car">
+                            </div>
+                        </fieldset>
+                        <div id="myButtons">
+                            <input type="submit">
+                            <input type="reset">
+                        </div>
+                </div>      
+            </fieldset>
+        </form>
+        <script>
+            function changecolor(){
+                let color=document.getElementById('colorbox').value;
+                document.body.style.backgroundColor=color;
+                document.getElementById('cbox').value=color;
+            }
+        </script>
+    
+    </body>
+    <script src="https://my.gblearn.com/js/loadscript.js"></script>
+</html>

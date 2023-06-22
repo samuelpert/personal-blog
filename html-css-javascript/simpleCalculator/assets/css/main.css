@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form{
+    width: 40%;
+    margin: 3em auto;
+}
+
+legend{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.box{
+    margin: 1.5em;
+}
+
+label{
+    font-size: large;
+}
+
+input[type='text']{
+    width: 55%;
+    float: right;
+}
+
+select{
+    padding: .5em;
+    margin: 0 2em;
+}
+
+input[type='button'], input[type='reset']{
+    border-radius: 20px;
+    padding: .45em;
+}
+
+#myButtons{
+    margin: 2em;
+    text-align: center;
+    clear: both;
+
+}

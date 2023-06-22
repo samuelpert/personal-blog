@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms and methods</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <form action="http://comp1234.gblearn.com/winter2023/lecture/wk11/WhereToSendThisInformation.php" target="_blank">
+            <fieldset>
+                <legend>Comment Form</legend>
+
+                <div class="box">
+                    <strong>Your name:</strong>
+                    <br>
+                    <input type="text" name="fname" required placeholder="First">
+                    <input type="text" name="lname" required placeholder="Last">
+                </div>
+                <div class="box">
+                    <strong>Email:</strong> 
+                    <br>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="box">
+                    <strong>Subject of comment:</strong>
+                    <br>
+                    <select name="subject">
+                        <option value="Problem">Problem</option>
+                        <option value="Comment">Comment</option>
+                        <option value="General">General Question</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <strong>Comments:</strong>
+                    <br>
+                    <textarea name="comments" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="box">
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+    <script src="https://my.gblearn.com/js/loadscript.js"></script>
+</html>

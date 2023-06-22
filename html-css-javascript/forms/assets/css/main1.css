@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+form{
+    width: 55%;
+    margin: 0 auto;
+}
+
+legend{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.box{
+    margin: 1.5em;
+}
+
+label{
+    font-size: x-large;
+}
+
+input[type='text'], input[type='email']{
+    width: 85%;
+    float: right;
+}
+
+input[name='colortext']{
+    width: 65%;
+}
+input[type='button']{
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+#payment{
+    width: 38%;
+    float: left;
+}
+
+#choose{
+    width: 60%;
+    float: right;
+}
+
+#myButtons{
+    width: fit-content;
+    margin: 2em auto;
+    
+}
